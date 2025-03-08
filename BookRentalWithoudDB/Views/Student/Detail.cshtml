@@ -17,3 +17,8 @@
         <td>@Model.BirthDate.ToLongDateString()</td>
     </tr>
 </table>
+<a asp-controller="Student" asp-action="Edit" asp-route-id="@Model.ID"> Edit Student Info </a>
+<br/>
+<form method="post" asp-controller="Student" asp-action="Delete" asp-route-id="@Model.ID">
+    <button type="submit">Delete Student</button>
+</form>
